@@ -11,10 +11,10 @@ title = "Daniel Yakubu"
 
 [params]
   name = "Daniel Yakubu"
-  tagline = "TODO: one-line bio, e.g. 'I am a software engineer working on ...'"
-  intro = "TODO: a short paragraph about what this site is for (coursework, projects, blog posts, etc.)"
-  # TODO: add a photo to static/images/headshot.jpg and set photo = "images/headshot.jpg"
-  photo = ""
+  tagline = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  intro = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  # TODO: replace with a real photo at static/images/headshot.jpg (or .png) and update the extension below
+  photo = "images/headshot.svg"
   github = "https://github.com/daniel13112001"
   linkedin = ""
   email = ""
