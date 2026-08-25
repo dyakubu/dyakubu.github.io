@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-white text-neutral-800 antialiased;
+  }
+  a {
+    @apply underline decoration-neutral-300 underline-offset-2 hover:decoration-neutral-800;
+  }
+  h1, h2, h3 {
+    @apply font-semibold text-neutral-900;
+  }
+}
+
+@layer components {
+  .prose-content h1 { @apply text-2xl mt-8 mb-3; }
+  .prose-content h2 { @apply text-xl mt-6 mb-2; }
+  .prose-content p { @apply my-3 leading-relaxed; }
+  .prose-content ul { @apply list-disc pl-5 my-3; }
+  .prose-content li { @apply my-1; }
+  .prose-content code { @apply bg-neutral-100 px-1 py-0.5 rounded text-sm; }
+  .prose-content pre { @apply bg-neutral-100 p-3 rounded overflow-x-auto text-sm my-3; }
+}

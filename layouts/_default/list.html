@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <h1 class="text-2xl mb-1">{{ .Title }}</h1>
+  {{ with .Content }}<div class="prose-content mb-4">{{ . }}</div>{{ end }}
+
+  <ul class="mt-6 space-y-4">
+    {{ range .Pages.ByDate.Reverse }}
+      <li>
+        <a href="{{ .RelPermalink }}" class="font-medium">{{ .Title }}</a>
+        {{ if not .Date.IsZero }}<div class="text-sm text-neutral-500">{{ .Date.Format "January 2006" }}</div>{{ end }}
+        {{ with .Params.summary }}<p class="text-sm text-neutral-600 mt-1">{{ . }}</p>{{ end }}
+      </li>
+    {{ else }}
+      <li class="text-neutral-500 italic">Nothing here yet.</li>
+    {{ end }}
+  </ul>
+{{ end }}

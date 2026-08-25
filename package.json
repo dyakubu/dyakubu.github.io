@@ -1,0 +1,19 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Personal website built with Hugo and Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "hugo server --buildDrafts",
+    "build": "hugo --gc --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

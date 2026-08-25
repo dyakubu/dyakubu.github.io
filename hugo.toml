@@ -1,0 +1,45 @@
+baseURL = "https://daniel13112001.github.io/"
+title = "Daniel Yakubu"
+
+[languages.en]
+  locale = "en-us"
+  label = "English"
+  weight = 1
+
+[security.exec]
+  allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
+
+[params]
+  name = "Daniel Yakubu"
+  tagline = "TODO: one-line bio, e.g. 'I am a software engineer working on ...'"
+  intro = "TODO: a short paragraph about what this site is for (coursework, projects, blog posts, etc.)"
+  # TODO: add a photo to static/images/headshot.jpg and set photo = "images/headshot.jpg"
+  photo = ""
+  github = "https://github.com/daniel13112001"
+  linkedin = ""
+  email = ""
+
+[[menu.main]]
+  name = "Projects"
+  url = "/projects/"
+  weight = 10
+
+[[menu.main]]
+  name = "Blogs"
+  url = "/blogs/"
+  weight = 20
+
+[[menu.main]]
+  name = "Classes"
+  url = "/classes/"
+  weight = 30
+
+[[menu.main]]
+  name = "Bookshelf"
+  url = "/bookshelf/"
+  weight = 40
+
+[[menu.main]]
+  name = "GitHub"
+  url = "https://github.com/daniel13112001"
+  weight = 50
