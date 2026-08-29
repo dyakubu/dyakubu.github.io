@@ -1,4 +1,4 @@
-# daniel13112001.github.io
+# dyakubu.github.io
 
 Personal website built with [Hugo](https://gohugo.io) and [Tailwind CSS](https://tailwindcss.com), modeled on the structure of trevorkask.github.io: Home, Projects, Blogs, Classes, Bookshelf.
 

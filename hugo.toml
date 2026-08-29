@@ -1,4 +1,4 @@
-baseURL = "https://daniel13112001.github.io/"
+baseURL = "https://dyakubu.github.io/"
 title = "Daniel Yakubu"
 
 [languages.en]
@@ -15,7 +15,7 @@ title = "Daniel Yakubu"
   intro = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   # TODO: replace with a real photo at static/images/headshot.jpg (or .png) and update the extension below
   photo = "images/headshot.svg"
-  github = "https://github.com/daniel13112001"
+  github = "https://github.com/dyakubu"
   linkedin = ""
   email = ""
 
@@ -41,5 +41,5 @@ title = "Daniel Yakubu"
 
 [[menu.main]]
   name = "GitHub"
-  url = "https://github.com/daniel13112001"
+  url = "https://github.com/dyakubu"
   weight = 50
