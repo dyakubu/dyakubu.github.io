@@ -7,6 +7,14 @@
   a {
     @apply underline decoration-neutral-300 underline-offset-2 hover:decoration-neutral-800;
   }
+  a[target="_blank"]::after {
+    content: "↗";
+    display: inline-block;
+    margin-left: 0.2em;
+    font-size: 0.75em;
+    vertical-align: text-top;
+    text-decoration: none;
+  }
   h1, h2, h3 {
     @apply font-semibold text-neutral-900;
   }
