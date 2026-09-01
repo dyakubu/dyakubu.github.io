@@ -1,6 +1,7 @@
 ---
 title: "Scout"
 date: 2026-08-31
+weight: 1
 summary: "Local semantic search CLI for text, PDF, and (soon) media files, deployed via Homebrew."
 link: "https://github.com/dyakubu/scout"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Circles"
 date: 2026-08-31
+weight: 3
 summary: "A private, trust-based social network where circles are cliques of mutual friends."
 link: "https://github.com/dyakubu/Circles"
 ---

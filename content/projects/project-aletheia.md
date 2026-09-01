@@ -1,6 +1,7 @@
 ---
 title: "Project Aletheia"
 date: 2026-08-31
+weight: 2
 summary: "Real-time fact-checking via a Chrome extension backed by a Go + Python microservices stack."
 link: "https://github.com/dyakubu/project-aletheia"
 ---

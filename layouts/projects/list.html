@@ -3,7 +3,7 @@
   {{ with .Content }}<div class="prose-content mb-4">{{ . }}</div>{{ end }}
 
   <div class="mt-6 space-y-8">
-    {{ range .Pages.ByDate.Reverse }}
+    {{ range .Pages.ByWeight }}
       <article class="pb-8 border-b border-neutral-200 last:border-b-0">
         <h2 class="text-lg font-medium">{{ .Title }}</h2>
         {{ with .Params.link }}<p class="text-sm mt-1"><a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></p>{{ end }}
