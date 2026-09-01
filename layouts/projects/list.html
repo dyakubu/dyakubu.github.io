@@ -6,7 +6,6 @@
     {{ range .Pages.ByDate.Reverse }}
       <article class="pb-8 border-b border-neutral-200 last:border-b-0">
         <h2 class="text-lg font-medium">{{ .Title }}</h2>
-        {{ if not .Date.IsZero }}<div class="text-sm text-neutral-500">{{ .Date.Format "January 2006" }}</div>{{ end }}
         {{ with .Params.link }}<p class="text-sm mt-1"><a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></p>{{ end }}
         <div class="prose-content">
           {{ .Content }}
