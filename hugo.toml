@@ -11,7 +11,7 @@ title = "Daniel Yakubu"
 
 [params]
   name = "Daniel Yakubu"
-  intro = "Hi, I'm a software engineer working on applications used by financial advisers. I hold an MS in Computer Science from UT Austin and a BS in Computer Science from Vanderbilt. I'm especially interested in concurrency, distributed systems, algorithms, and deep learning, and I like building things that let me dig into those areas directly. Scout, a local-only semantic search CLI, started as an excuse to get hands-on with concurrent indexing pipelines and on-device inference. Circles, a private social network for close friends, let me think through consistency and access-control problems at the database layer. When I'm not writing code, I'm usually behind a camera, you can find some of my favorite shots on the Photography tab."
+  intro = "Hi, I'm Daniel. This site is where I keep what I care about outside of work: projects, photography, and books. I'm interested in concurrency, distributed systems, algorithms, and deep learning."
   # TODO: replace with a real photo at static/images/headshot.jpg (or .png) and update the extension below
   photo = "images/headshot.svg"
   github = "https://github.com/dyakubu"
