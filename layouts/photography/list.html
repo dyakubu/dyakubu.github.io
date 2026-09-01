@@ -6,15 +6,28 @@
     {{ with .Site.Params.unsplash }} &middot; <a href="{{ . }}" target="_blank" rel="noopener">Unsplash</a>{{ end }}
   </p>
 
-  <div class="columns-2 gap-4">
+  <div class="grid grid-cols-2 md:grid-cols-6 gap-4 grid-flow-dense">
     {{ range .Params.photos }}
       {{ $caption := .caption }}
+      {{ $size := .size | default "half" }}
       {{ with $.Resources.GetMatch .file }}
-        {{ with .Resize "640x webp q82" }}
-          <figure class="mb-4 break-inside-avoid">
-            <img src="{{ .RelPermalink }}" alt="{{ $caption }}" class="w-full rounded" loading="lazy">
-            {{ with $caption }}<figcaption class="text-xs text-neutral-500 mt-1">{{ . }}</figcaption>{{ end }}
-          </figure>
+        {{ with .Resize "1200x webp q82" }}
+          {{ if eq $size "full" }}
+            <figure class="col-span-2 md:col-span-6">
+              <img src="{{ .RelPermalink }}" alt="{{ $caption }}" class="w-full h-auto rounded" loading="lazy">
+              {{ with $caption }}<figcaption class="text-xs text-neutral-500 mt-1">{{ . }}</figcaption>{{ end }}
+            </figure>
+          {{ else if eq $size "third" }}
+            <figure class="col-span-1 md:col-span-2">
+              <img src="{{ .RelPermalink }}" alt="{{ $caption }}" class="w-full h-auto rounded" loading="lazy">
+              {{ with $caption }}<figcaption class="text-xs text-neutral-500 mt-1">{{ . }}</figcaption>{{ end }}
+            </figure>
+          {{ else }}
+            <figure class="col-span-1 md:col-span-3">
+              <img src="{{ .RelPermalink }}" alt="{{ $caption }}" class="w-full h-auto rounded" loading="lazy">
+              {{ with $caption }}<figcaption class="text-xs text-neutral-500 mt-1">{{ . }}</figcaption>{{ end }}
+            </figure>
+          {{ end }}
         {{ end }}
       {{ end }}
     {{ end }}
