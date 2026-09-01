@@ -18,4 +18,23 @@
     {{ .Content }}
     <p>{{ .Site.Params.intro }}</p>
   </div>
+
+  {{ with where .Site.RegularPages "Section" "projects" }}
+    <h2 class="text-lg font-semibold mt-10 mb-4">Projects</h2>
+    <div class="space-y-4">
+      {{ range . }}
+        {{ $title := .Title }}
+        {{ $summary := .Params.summary }}
+        <div>
+          {{ with .Params.link }}
+            <a href="{{ . }}" target="_blank" rel="noopener" class="font-medium">{{ $title }}</a>
+          {{ else }}
+            <span class="font-medium">{{ $title }}</span>
+          {{ end }}
+          {{ with $summary }}<p class="text-sm text-neutral-600 mt-1">{{ . }}</p>{{ end }}
+        </div>
+      {{ end }}
+    </div>
+    <p class="text-sm mt-4"><a href="{{ "/projects/" | relURL }}">See all projects</a></p>
+  {{ end }}
 {{ end }}
