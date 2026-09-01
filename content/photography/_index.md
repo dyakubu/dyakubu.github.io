@@ -1,0 +1,23 @@
+---
+title: "Photography"
+blurb: "I love photography, here are some of my favorite shots from my travels."
+photos:
+  - file: "daniel-yakubu-_c6YPNe2EcA-unsplash.jpg"
+    caption: "TODO: location"
+  - file: "daniel-yakubu-3H1G0ICy0ww-unsplash.jpg"
+    caption: "TODO: location"
+  - file: "daniel-yakubu-akr4KA1Na5o-unsplash.jpg"
+    caption: "TODO: location"
+  - file: "daniel-yakubu-g7JZJDblAk4-unsplash.jpg"
+    caption: "TODO: location"
+  - file: "daniel-yakubu-hLsBKVCj3uQ-unsplash.jpg"
+    caption: "TODO: location"
+  - file: "daniel-yakubu-JKdIHsDLAu8-unsplash.jpg"
+    caption: "TODO: location"
+  - file: "daniel-yakubu-kD3bcShufCo-unsplash.jpg"
+    caption: "TODO: location"
+  - file: "daniel-yakubu-mD4C1q9yzzE-unsplash.jpg"
+    caption: "TODO: location"
+  - file: "daniel-yakubu-u__LTS8UUH8-unsplash.jpg"
+    caption: "TODO: location"
+---

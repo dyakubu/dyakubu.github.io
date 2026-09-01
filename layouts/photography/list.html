@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <h1 class="text-2xl mb-1">{{ .Title }}</h1>
+  {{ with .Params.blurb }}<p class="text-neutral-600 mb-1">{{ . }}</p>{{ end }}
+  <p class="text-sm mb-6">
+    {{ with .Site.Params.instagram }}<a href="{{ . }}" target="_blank" rel="noopener">Instagram</a>{{ end }}
+    {{ with .Site.Params.unsplash }} &middot; <a href="{{ . }}" target="_blank" rel="noopener">Unsplash</a>{{ end }}
+  </p>
+
+  <div class="columns-2 gap-4">
+    {{ range .Params.photos }}
+      {{ $caption := .caption }}
+      {{ with $.Resources.GetMatch .file }}
+        {{ with .Resize "640x webp q82" }}
+          <figure class="mb-4 break-inside-avoid">
+            <img src="{{ .RelPermalink }}" alt="{{ $caption }}" class="w-full rounded" loading="lazy">
+            {{ with $caption }}<figcaption class="text-xs text-neutral-500 mt-1">{{ . }}</figcaption>{{ end }}
+          </figure>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

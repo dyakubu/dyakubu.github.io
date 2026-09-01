@@ -18,6 +18,8 @@ title = "Daniel Yakubu"
   github = "https://github.com/dyakubu"
   linkedin = ""
   email = ""
+  instagram = "https://instagram.com/p.oluwaseun.doy"
+  unsplash = "https://unsplash.com/@yakubudo"
 
 [[menu.main]]
   name = "Projects"
@@ -38,6 +40,11 @@ title = "Daniel Yakubu"
   name = "Bookshelf"
   url = "/bookshelf/"
   weight = 40
+
+[[menu.main]]
+  name = "Photography"
+  url = "/photography/"
+  weight = 45
 
 [[menu.main]]
   name = "GitHub"
