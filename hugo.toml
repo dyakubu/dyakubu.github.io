@@ -12,8 +12,7 @@ title = "Daniel Yakubu"
 [params]
   name = "Daniel Yakubu"
   intro = "Hi, I'm Daniel. This site is where I keep what I care about outside of work: projects, photography, and books. I'm interested in concurrency, distributed systems, algorithms, and deep learning."
-  # TODO: replace with a real photo at static/images/headshot.jpg (or .png) and update the extension below
-  photo = "images/headshot.svg"
+  photo = "images/headshot.jpg"
   github = "https://github.com/dyakubu"
   linkedin = "https://www.linkedin.com/in/dyakubu/"
   email = ""
