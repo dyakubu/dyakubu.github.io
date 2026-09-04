@@ -1,7 +1,6 @@
 {{ define "main" }}
   <a href="{{ .Parent.RelPermalink }}" class="text-sm">&larr; back to {{ .Parent.Title }}</a>
-  <h1 class="text-2xl mt-3 mb-1">{{ .Title }}</h1>
-  {{ if not .Date.IsZero }}<div class="text-sm text-neutral-500 mb-4">{{ .Date.Format "January 2, 2006" }}</div>{{ end }}
+  <h1 class="text-2xl mt-3 mb-4">{{ .Title }}</h1>
   {{ with .Params.link }}<p class="mb-4"><a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></p>{{ end }}
   <div class="prose-content">
     {{ .Content }}

@@ -6,7 +6,6 @@
     {{ range .Pages.ByDate.Reverse }}
       <li>
         <a href="{{ .RelPermalink }}" class="font-medium">{{ .Title }}</a>
-        {{ if not .Date.IsZero }}<div class="text-sm text-neutral-500">{{ .Date.Format "January 2006" }}</div>{{ end }}
         {{ with .Params.summary }}<p class="text-sm text-neutral-600 mt-1">{{ . }}</p>{{ end }}
       </li>
     {{ else }}
