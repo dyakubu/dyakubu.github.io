@@ -1,6 +1,5 @@
 ---
 title: "Computer Systems: A Programmer's Perspective"
-date: 2026-10-14
 summary: "Randal Bryant and David O'Hallaron's guide to how computer systems execute programs, store information, and communicate."
 link: "https://csapp.cs.cmu.edu/"
 ---
